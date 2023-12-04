@@ -1,2 +1,55 @@
-<h1>placeholder</h1>
-<a href="/">Home</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieInfo.org - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/movieinfo.png" alt="MovieInfo.org Logo"></a>
+        <nav>
+            <a href="reviews.html">Reviews</a>
+            <a href="upcoming.html">Upcoming</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>Have a suggestion for a movie we should review? See a new movie announcement that we missed on <a href="upcoming.html">our upcoming movies page</a>? Send us a message!</p>
+
+        <form id="contactForm">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="8" placeholder="Your message here..." required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Jackson Stogsdill. All rights reserved. Website made for IT 3203 term project.</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            console.log('Email:', email);
+            console.log('Message:', message);
+
+            alert('Form submitted successfully!');
+        }
+    </script>
+</body>
+
+</html>
