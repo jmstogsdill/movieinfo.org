@@ -1,2 +1,91 @@
-<h1>placeholder</h1>
-<a href="/">Home</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieInfo.org - Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .review {
+            margin-bottom: 30px;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            color: #40bcf4;
+        }
+
+        .rating span {
+            font-size: 1.5em;
+            margin-right: 2px;
+        }
+
+        .review-title {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/movieinfo.png" alt="MovieInfo.org Logo"></a>
+        <nav>
+            <a href="reviews.html" class="active">Reviews</a>
+            <a href="upcoming.html">Upcoming</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Movie Reviews</h2>
+
+        <div class="review" id="movieA">
+            <div class="review-title">Review of Movie 3</div>
+            <div class="date">Published on: Nov 28, 2023</div>
+            <div class="rating">
+                <span>★★★★½</span>
+            </div>
+            <img src="sample_image1.jpg" alt="Sample Image 3">
+            <p>This is a review of Movie 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sample-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="review" id="movieB">
+            <div class="review-title">Review of Movie 2</div>
+            <div class="date">Published on: Nov 4, 2023</div>
+            <div class="rating">
+                <span>★★★</span>
+            </div>
+            <img src="sample_image2.jpg" alt="Sample Image 2">
+            <p>This is a review of Movie 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sample-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="review" id="movieC">
+            <div class="review-title">Review of Movie 1</div>
+            <div class="date">Published on: Oct 31, 2023</div>
+            <div class="rating">
+                <span>★★★★★</span>
+            </div>
+            <img src="sample_image3.jpg" alt="Sample Image 1">
+            <p>This is a review of Movie 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sample-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MovieInfo.org. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
